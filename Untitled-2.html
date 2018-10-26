@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<body  style="background-color: aliceblue">
+	<h1 align="center">Look!Style and Colors</h1>
+	<p style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color: red">this is<br/> a <br/>paragraph</p>
+	<hr/>
+	<p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';color: #F8D553">这是另一段</p>
+<h2 style="background-color: beige;text-align: inherit">this is a heading</h2>
+	<p>
+		<b>this text is bold(黑体)</b>
+	<br/>
+		<strong>this text is strong(加粗)</strong>
+	<br/>
+		<big>this text is big(字号加大)</big>
+	<br/>
+		<em>this text is emphasized</em>
+	<br/>
+		<i>this text is italic</i>
+	<br/>
+		<small>this text is samll(字号减小)</small>
+	<br/>
+		this text contains 
+	<sub>下标/</sub>
+	<br/>
+	this text contains
+	<sup>上标？</sup><!--13-31行为文本格式化的操作-->
+	</p>
+<a href="http://www.w3school.com.cn/html/html_basic.asp">this is a link</a>
+<h3 style="background-color: #F10A0E;text-align: center">this is a heading</h3>
+<pre><strong> 这是预格式文本。 保留了空 格 和
+换行 。简单地说就是你在源代码中不论输入的文本样式是什么样子，都会在网页中原封不动显示出来</strong></pre>
+	<p>pre很适合显示计算机代码 </p>
+	<pre>
+	for i =1 to 10
+	printf i
+	next i
+	</pre>
+	<abbr title="etcera">etc.</abbr>
+	<br/>
+	<acronym title="World Wide Web">WWW</acronym>
+	<p><b>在某些浏览器中，当您把鼠标移至缩略词上时，title可用于展示表达的完整版本。</b></p>
+	<p><big>仅对于IE5中的acroym元素有效。</big></p>
+	<p><i>对于Netspace 6.2中的abbr和acronym元素都有效。</i></p><!--43-48为“计算机输出”的标签-->
+	<address>
+	 	联系作者：<a href="https://music.163.com/#/user/home?id=301468785">我的网易云个人主页</a><br/>
+	</address><!--49-50为链接 地址-->
+	<p>如果您的浏览器支持 bi-directionl override (bdo),下一行会从右向左输出（rtl);</p>
+	<bdo dir="rtl">猪是念着倒不</bdo><!--52-53 展示了如何转换文字的方向 ltr左向右 rtl右向左-->
+	这是长的引用
+	<blockquote>崂山琪哥。崂山琪哥。崂山琪哥。崂山琪哥。崂山琪哥。崂山琪哥。崂山琪哥。崂山琪哥。磷酸氢钙。磷酸氢钙。</blockquote>
+	这是短的引用：
+	<q>
+	这是短的引用。
+	</q>
+	<p>使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。</p>
+<div style="text-align: center;">
+  <button onclick="playPause()">播放/暂停</button>
+	<button onClick="makeBig()">放大</button>
+	<button onClick="makeNormal()">正常</button>
+	<button onClick="makeSmall()">缩小</button>
+	<br/>
+<video id="video1" width="720" style="margin-top: 15px;">
+  <source src="素材文件/Need for Speed™ Most Wanted 2017_11_17 16_49_33.mp4" type="video/mp4">
+</video>
+</div>
+<script type="text/javascript">
+	var myVideo=document.getElementById("video1");
+function playPause()
+{
+if(myVideo.paused) myVideo.play();
+	else myVideo.pause();
+}
+function makeBig()
+{
+	myVideo.width=1080;
+}
+function makeSmall()
+{
+	myVideo.width=480;
+}
+function makeNormal()
+{
+	myVideo.width=720;
+}
+	
+	</script>	
+</body>
+</html>
