@@ -1,101 +1,231 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml">>
 <head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-	 <meta charset="UTF-8">
-    <title>Document</title>
-    <style type="text/css">
-        h1{
-            text-align: center;
-            font-size: 100px;
-        }
-    </style>
-</head>
-<body  style="background-color: aliceblue">
-	<h1 align="center">404 Page Not Found</h1>
-	<p style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';color: red">换行<br/>嘤<br/>嘤嘤</p>
-	<hr/>
-	<p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';color: #F8D553">嘤嘤嘤</p>
-<h2 style="background-color: beige;text-align: inherit">嘤嘤嘤</h2>
-	<p>
-		<b>黑体嘤嘤嘤</b>
-	<br/>
-		<strong>加粗嘤嘤嘤</strong>
-	<br/>
-		<big>加大嘤嘤嘤</big>
-	<br/>
-		<em>斜体嘤嘤嘤1号</em>
-	<br/>
-		<i>斜体嘤嘤嘤2号</i>
-	<br/>
-		<small>斜体嘤嘤嘤</small>
-	<br/>
-		this text contains 
-	<sub>下标/</sub>
-	<br/>
-	this text contains
-	<sup>上标？</sup><!--13-31行为文本格式化的操作-->
-	</p>
-<a href="https://space.bilibili.com/214015787/">这是一个链接</a>
-<h3 style="background-color: #F10A0E;text-align: center">嘤嘤嘤的标题</h3>
-<pre><strong> 保 留 空 格 的
-嘤 嘤 嘤 </strong></pre>
-	<p>pre很适合显示计算机代码 </p>
-	<pre>
-	for i =1 to 10
-	printf i
-	next i
-	</pre>
-	<abbr title="etcera">etc.</abbr>
-	<br/>
-	<acronym title="World Wide Web">WWW</acronym>
-	<p><b>在某些浏览器中，当您把鼠标移至缩略词上时，title可用于展示表达的完整版本。</b></p>
-	<p><big>仅对于IE5中的acroym元素有效。</big></p>
-	<p><i>对于Netspace 6.2中的abbr和acronym元素都有效。</i></p><!--43-48为“计算机输出”的标签-->
-	<address>
-	 	联系作者：<a href="https://music.163.com/#/user/home?id=301468785">我的网易云个人主页</a><br/>
-	</address><!--49-50为链接 地址-->
-	<p>如果您的浏览器支持 bi-directionl override (bdo),下一行会从右向左输出（rtl);</p>
-	<bdo dir="rtl">猪是念着倒不</bdo><!--52-53 展示了如何转换文字的方向 ltr左向右 rtl右向左-->
-	这是长的引用
-	<blockquote>磷酸氢钙。磷酸氢钙。</blockquote>
-	这是短的引用：
-	<q>
-	这是短的引用。
-	</q>
-	<p>使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。</p>
-<div style="text-align: center;">
-  <button onclick="playPause()">播放/暂停</button>
-	<button onClick="makeBig()">放大</button>
-	<button onClick="makeNormal()">正常</button>
-	<button onClick="makeSmall()">缩小</button>
-	<br/>
-<video id="video1" width="720" style="margin-top: 15px;">
-  <source src="素材文件/Need for Speed™ Most Wanted 2017_11_17 16_49_33.mp4" type="video/mp4">
-</video>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>personal page</title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+<style type="text/css">
+body,ul,li{
+	padding: 0;
+	margin:0;
+}
+a {
+	color: rgb(1, 124, 185);
+	text-decoration: none;
+}
+body{
+	font-size:16px;
+	color: #5a5d63;
+	background: #d6d7d9;
+	background: -webkit-radial-gradient(#eeefef, #d6d7d9);
+	background: -moz-radial-gradient(#eeefef, #d6d7d9);
+	background: -o-radial-gradient(#eeefef, #d6d7d9);
+	background: -ms-radial-gradient(#eeefef, #d6d7d9);
+	background: radial-gradient(#eeefef, #d6d7d9);
+	padding: 50px;
+}
+.box{
+	width: 540px;
+	height: 200px;
+	margin: 50px auto;
+}
+.box li{
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	display: inline-block;
+	width: 150px;
+	height:160px;
+	text-shadow:0 2px 1px #f4f4f4;
+	border:1px solid #9fa2ad;
+	border-radius: 5px;
+	margin-right:10px;
+	background: -webkit-gradient(linear,0 0, 0 100%,
+	color-stop(.2,rgba(248,248,248,.3)),
+	color-stop(.5,rgba(168,173,190,.5)),
+	color-stop(.51,rgba(168,173,190,.3)),
+	color-stop(.9,rgba(248,248,248,.2)));
+	background: -webkit-linear-gradient(top,rgba(248,248,248,.3) 20%,rgba(168,173,190,.5) 50%,rgba(168,173,190,.3) 51%, rgba(248,248,248,.2) 90%);
+	background: -moz-linear-gradient(top, rgba(248,248,248,.3) 20%,rgba(168,173,190,.5) 50%,rgba(168,173,190,.3) 51%, rgba(248,248,248,.2) 90%);
+	background: -o-linear-gradient(top, rgba(248,248,248,.3) 20%, rgba(168,173,190,.5) 50%, rgba(168,173,190,.3) 51%, rgba(248,248,248,.2) 90%);
+	background: -ms-linear-gradient(top, rgba(248,248,248,.3) 20%, rgba(168,173,190,.5) 50%, rgba(168,173,190,.3) 51%, rgba(248,248,248,.2) 90%);
+	background: linear-gradient(top, rgba(248,248,248,.3) 20%, rgba(168,173,190,.5) 50%, rgba(168,173,190,.3) 51%, rgba(248,248,248,.2) 90%);
+	box-shadow:inset 0 -2px 0 #f1f1f1,0 1px 0 #f1f1f1,0 2px 0 #9fa2ad,0 3px 0 #f1f1f1,0 4px 0 #9fa2ad;
+}
+.box li:before,
+.box li:after{
+	display: block;
+	content: "";
+	position: absolute;
+	width: 150px;
+}
+.box li:before{
+	top:50%;
+	height: 1px;
+	box-shadow: 0 1px 0 #868995,0 2px 1px #fff;
+}
+.box li:after{
+	bottom: -65px;
+	height: 60px;
+	border-radius:0 0 5px 5px;
+	background: -webkit-gradient(linear,0 0,0 100%,from(rgba(0,0,0,.1)),to(rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	background: -moz-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	background: -o-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	background: -ms-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	background: linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	z-index: 1
+}
+.box li span:first-child{
+	font:120px 'BitstreamVeraSansMonoBold';
+	color: #52555a;
+	display: block;
+	height: 130px;
+	line-height: 150px;
+}
+</style>
+	</head>
+	<body>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=1920 height=128 src="//music.163.com/outchain/player?type=2&id=409649830&auto=1&height=66"></iframe>
+
+		<div class="box">
+	<ul>
+		<li><span id="hour"></span><span>时</span></li>
+		<li><span id="minute"></span><span>分</span></li>
+		<li><span id="second"></span><span>秒</span></li>
+	</ul>
 </div>
-<script type="text/javascript">
-	var myVideo=document.getElementById("video1");
-function playPause()
-{
-if(myVideo.paused) myVideo.play();
-	else myVideo.pause();
+		<script type="text/javascript">
+var hour=document.getElementById('hour');
+var minute=document.getElementById('minute');
+var second=document.getElementById('second');
+function showTime(){
+	var oDate=new Date();
+	var iHours=oDate.getHours();
+	var iMinute=oDate.getMinutes();
+	var iSecond=oDate.getSeconds();
+	hour.innerHTML=AddZero(iHours);
+	minute.innerHTML=AddZero(iMinute);
+	second.innerHTML=AddZero(iSecond);
 }
-function makeBig()
-{
-	myVideo.width=1080;
+showTime();
+setInterval(showTime,1000);
+function AddZero(n){
+	if(n<10){
+		return '0'+n;
+	}
+	return ''+n;
 }
-function makeSmall()
-{
-	myVideo.width=480;
-}
-function makeNormal()
-{
-	myVideo.width=720;
-}
-	
-	</script>
-	<p>PS:视频崩了。。。</p>
+</script>
+		<div class="container">
+			<header class="clearfix">
+				<span>blog <span class="bp-icon bp-icon-about" data-content="嘤嘤嘤"></span></span>
+				<h1>K</h1>
+				
+			</header>
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/20131112111320-581634125.jpg" alt="img01"/>
+								<figcaption><h3>青岛科技大学</h3><p>我的学校</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thJZ5FSGKD.jpg"alt="img02"/>
+								<figcaption><h3>CSDN</h3><p>中文it社区 </p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/d4628535e5dde7119c3d076aabefce1b9c1661ba.png" alt="img03"/>
+								<figcaption><h3>GitHub</h3><p>全球最大的开源项目托管平台</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/e61190ef76c6a7ef40986edff6faaf51f2de6689.png" alt="img04"/>
+								<figcaption><h3>网易云音乐</h3><p>云村人不解释 </p></figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>青岛科技大学</h3>
+									<a href="https://baike.baidu.com/item/青岛科技大学" target="_blank"><b>了解更多</b></a></br>
+									<a href="http://www.qust.edu.cn/" target="_blank"><b>直接访问</b></a></br>
+									<p>青岛科技大学（Qingdao University of Science and Technology) 位于山东省青岛市，是原化学工业部直属重点高校 ,入选国家“111计划”  ，是国家首批“卓越工程师教育培养计划”、“新工科研究与实践项目”入选高校，是国内第一家设立橡胶专业的高等院校，亚洲唯一的橡胶专业领域高校。曾先后隶属国家轻工业部、国家化学工业部，现为山东省属重点建设的大学和山东省应用基础型人才培养特色名校，被教育部评估为“本科教学工作水平评估优秀高校”和“全国毕业生就业典型经验高校”，被社会赞誉为“中国橡胶工业的黄埔”。</p>
+								</figcaption>
+								<img src="img/t01231196706d2ac627.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>CSDN</h3>
+									<a href="https://baike.baidu.com/item/csdn" target="_blank"><b>了解更多</b></a></br>
+									<a href="https://www.csdn.net/" target="_blank"><b>直接访问</b></a></br>
+									<p>CSDN (Chinese Software Developer Network) 创立于1999年，是中国的IT社区和服务平台，为中国的软件开发者和IT从业者提供知识传播、职业发展、软件开发等全生命周期服务，满足他们在职业发展中学习及共享知识和信息、建立职业发展社交圈、通过软件开发实现技术商业化等刚性需求。拥有超过3000万注册会员（其中活跃会员800万）、50万注册企业及合作伙伴。</p>
+								</figcaption>
+								<img src="img/thJZ5FSGKD.jpg" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>GitHub</h3>
+									<a href="https://baike.baidu.com/item/github" target="_blank"><b>了解更多</b></a></br>
+									<a href="https://www.coolav.com/" target="_blank"><b>直接访问</b></a></br>
+							<p>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。</br>
+							gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。</p>
+								</figcaption>
+								<img src="img/hero_github.jpg" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>网易云音乐</h3>
+									<a href="https://baike.baidu.com/item/网易云音乐" target="_blank"><b>了解更多</b></a></br>
+									<a href="https://music.163.com/" target="_blank"><b>直接访问</b></a></br>
+									<a href="https://music.163.com/#/user/home?id=301468785" target="_blank"><b>我的主页</b></a></br>
+									<p>网易云音乐是一款由网易开发的音乐产品，是网易杭州研究院的成果 ，依托专业音乐人、DJ、好友推荐及社交功能，在线音乐服务主打歌单、社交、大牌推荐和音乐指纹，以歌单、DJ节目、社交、地理位置为核心要素，主打发现和分享。</p>
+								</figcaption>
+								<img src="img/746764.jpg.png" alt="img04"/>
+							</figure>
+						</li>
+						
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
 </body>
 </html>
